@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <script src="/public/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="header">
+            <div class="left">
+                <div class="toggle">
+                    <div class="icon"></div>
+                </div>
+                <div class="logo"></div>
+                <div class="logo-name">YouTube</div>
+            </div>
+            <div class="center">
+                <form class="center">
+                    <input type="search" name="search" id="search" class="search" placeholder="Search">
+                    <div class="btn">
+                        <button type="submit" class="btn-search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <button class="btn-voice">
+                            <i class="fa fa-microphone"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <label id="switch" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                </label>
+                <button class="ellipsis">
+                    <i class="fa fa-ellipsis-v"></i>
+                </button>
+                <button class="sign-in">sign in</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#" class="navlist">
+                        <i class="fa fa-home"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navlist">
+                        <i class=" fa fa-compass"></i>
+                        <p>Explore</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navlist">
+                        <i class=" fa fa-youtube"></i>
+                        <p>Subscriptions</p>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#" class="navlist">
+                        <i class="fa fa-book"></i>
+                        <p>Library</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navlist">
+                        <i class=" fa fa-history"></i>
+                        <p>History</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="pills-wrapper">
+                <div class="pill-active">All</div>
+                <div class="pill">Python🐍</div>
+                <div class="pill">Cars🚗🏎</div>
+                <div class="pill">Computer Programming</div>
+                <div class="pill">Sass</div>
+                <div class="pill">Python🐍</div>
+                <div class="pill">Cars🚗🏎</div>
+                <div class="pill">Computer Programming</div>
+                <div class="pill">Sass</div>
+            </div>
+            <div class="primary">
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="youtube-light.png">
+                    </div>
+                    <div class="title">TItle</div>
+                    <div class="channel">Channel</div>
+                    <div class="views">1M</div>
+                    <div class="posted">2020</div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="youtube-dark.png">
+                    </div>
+                    <div class="avatar"></div>
+                    <div class="title">Title</div>
+                    <div class="channel">Channel</div>
+                    <div class="views">1M</div>
+                    <div class="posted">2020</div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="youtube-design.png">
+                    </div>
+                    <div class="title">TItle</div>
+                    <div class="channel">Channel</div>
+                    <div class="views">1M</div>
+                    <div class="posted">2020</div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="youtube-light.png">
+                    </div>
+                    <div class="title">TItle</div>
+                    <div class="channel">Channel</div>
+                    <div class="views">1M</div>
+                    <div class="posted">2020</div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="youtube-dark.png">
+                    </div>
+                    <div class="avatar"></div>
+                    <div class="title">Title</div>
+                    <div class="channel">Channel</div>
+                    <div class="views">1M</div>
+                    <div class="posted">2020</div>
+                </div>
+                <div class="video">
+                    <div class="thumbnail">
+                        <img src="youtube-design.png">
+                    </div>
+                    <div class="title">TItle</div>
+                    <div class="channel">Channel</div>
+                    <div class="views">1M</div>
+                    <div class="posted">2020</div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
