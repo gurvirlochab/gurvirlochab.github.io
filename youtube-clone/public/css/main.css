@@ -24,7 +24,7 @@
   --scrollbar-color-alt: #8c8c8c;
 }
 
-[data-theme="dark"] {
+[data-theme=dark] {
   --background-color: #202020;
   --background-color-alt: #313131;
   --text-color: #eee;
@@ -45,6 +45,8 @@
 *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: background-color 0.6s ease-in, color 0.2s linear;
   transition: background-color 0.6s ease-in, color 0.2s linear;
 }
@@ -97,8 +99,8 @@ select {
   }
 
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     -webkit-animation-duration: 0.01ms !important;
             animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
@@ -483,8 +485,8 @@ ul {
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-area: title;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
   font-weight: 800;
   max-height: 5rem;
   overflow: hidden;
@@ -697,12 +699,8 @@ ul {
     display: grid;
     -ms-grid-columns: var(--nav-width) var(--content-width);
     grid-template-columns: var(--nav-width) var(--content-width);
-    -ms-grid-rows: var(--nav-height) calc(
-        100vh - var(--nav-height) - var(--nav-height)
-      ) var(--nav-height);
-    grid-template-rows: var(--nav-height) calc(
-        100vh - var(--nav-height) - var(--nav-height)
-      ) var(--nav-height);
+    -ms-grid-rows: var(--nav-height) calc(100vh - var(--nav-height) - var(--nav-height)) var(--nav-height);
+    grid-template-rows: var(--nav-height) calc(100vh - var(--nav-height) - var(--nav-height)) var(--nav-height);
         grid-template-areas: "header header" "content content" "sidebar sidebar";
   }
 
@@ -755,7 +753,7 @@ ul {
   }
 
   .btn-search,
-  .btn-voice {
+.btn-voice {
     background-color: var(--background-color);
     width: 2rem;
     display: none;
