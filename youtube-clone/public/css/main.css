@@ -466,6 +466,13 @@ ul {
       grid-template-areas: "avatar title title" "avatar channel channel" "avatar views posted";
 }
 
+.thumbnail img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 25rem;
+}
+
 .avatar {
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
